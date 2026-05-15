@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Receipt Saver for Target",
+  "version": "0.3.1",
+  "description": "Unofficial local-only tool to save your own Target order receipts as HTML snapshots in a ZIP.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs",
+    "downloads",
+    "unlimitedStorage"
+  ],
+  "host_permissions": [
+    "https://www.target.com/*",
+    "https://target.com/*"
+  ],
+  "action": {
+    "default_title": "Target Receipts",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "minimum_chrome_version": "109"
+}
